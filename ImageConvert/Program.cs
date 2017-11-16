@@ -21,7 +21,7 @@ namespace ImageConvert
             String[] names= Directory.GetFiles(args[0]);
             foreach (String name in names)
             {
-                if (!name.EndsWith(".JPG"))
+                if (!name.EndsWith(".JPG") && !name.EndsWith(".jpg"))
                 {
                     continue;
                 }
